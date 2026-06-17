@@ -48,6 +48,7 @@ stop-ai-slop-vn/
 │   ├── phrases.md        # Phrases to remove
 │   ├── structures.md     # Structural patterns to avoid
 │   └── examples.md       # AI / human transformation pairs
+├── install.sh            # One-shot installer
 ├── CHANGELOG.md
 ├── README.md
 └── LICENSE
@@ -55,13 +56,30 @@ stop-ai-slop-vn/
 
 ## Quick start
 
-**Claude Code (personal)**
+**Fastest** — via [`skills`](https://www.npmjs.com/package/skills) (works for Claude Code, Cursor, Copilot...):
+
 ```bash
-git clone https://github.com/quangtuyen88/stop-ai-slop-vn ~/.claude/skills/stop-ai-slop-vn
+npx skills add quangtuyen88/stop-ai-slop-vn
 ```
 
-**Claude Code (project)**
+It asks whether to install per-project or for the whole machine. To skip the prompt:
+
 ```bash
+npx skills add quangtuyen88/stop-ai-slop-vn --global -y   # whole machine
+npx skills add quangtuyen88/stop-ai-slop-vn --project -y  # current project
+```
+
+**Or** run the bundled script (a wrapper around the command above):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/quangtuyen88/stop-ai-slop-vn/main/install.sh | bash
+```
+
+**Manual git clone**
+```bash
+# personal
+git clone https://github.com/quangtuyen88/stop-ai-slop-vn ~/.claude/skills/stop-ai-slop-vn
+# project
 git clone https://github.com/quangtuyen88/stop-ai-slop-vn <project>/.claude/skills/stop-ai-slop-vn
 ```
 

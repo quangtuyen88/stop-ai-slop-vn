@@ -1,6 +1,6 @@
 ---
 name: stop-ai-slop-vn
-description: Đưa văn tiếng Việt do AI viết về lại giọng người. Dùng khi viết nháp, biên tập, hoặc soát bài. Không chỉ sửa em-dash hay từ ưa thích, mà còn chữa: vắng chủ thể, H2 dạng mệnh đề, bơm phồng đao to búa lớn bằng Hán-Việt, khen mọi phía, và nhịp điệu đều tăm tắp.
+description: "Đưa văn tiếng Việt do AI viết về lại giọng người. Dùng khi viết nháp, biên tập, hoặc soát bài. Không chỉ sửa em-dash hay từ ưa thích, mà còn chữa: vắng chủ thể, H2 dạng mệnh đề, bơm phồng đao to búa lớn bằng Hán-Việt, khen mọi phía, và nhịp điệu đều tăm tắp."
 metadata:
   trigger: viết, biên tập, soát bài tiếng Việt; phát hiện và sửa mùi AI
   language: vi

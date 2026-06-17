@@ -36,6 +36,7 @@ stop-ai-slop-vn/
 │   ├── phrases.md        # Từ vựng cần loại bỏ
 │   ├── structures.md     # Mẫu cấu trúc cần tránh
 │   └── examples.md       # Đối chiếu bản AI / bản người
+├── install.sh            # Script cài nhanh
 ├── CHANGELOG.md
 ├── README.md
 └── LICENSE
@@ -43,15 +44,31 @@ stop-ai-slop-vn/
 
 ## Cài đặt
 
-**Claude Code (cá nhân)**
+**Cách nhanh nhất** — dùng [`skills`](https://www.npmjs.com/package/skills) (cài được cho Claude Code, Cursor, Copilot...):
 
 ```bash
-git clone https://github.com/quangtuyen88/stop-ai-slop-vn ~/.claude/skills/stop-ai-slop-vn
+npx skills add quangtuyen88/stop-ai-slop-vn
 ```
 
-**Claude Code (theo dự án)**
+Nó tự hỏi cài theo dự án hay cài cho cả máy. Muốn bỏ qua câu hỏi:
 
 ```bash
+npx skills add quangtuyen88/stop-ai-slop-vn --global -y   # cài cho cả máy
+npx skills add quangtuyen88/stop-ai-slop-vn --project -y  # cài theo dự án
+```
+
+**Hoặc** chạy script trong repo (gói lại lệnh trên):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/quangtuyen88/stop-ai-slop-vn/main/install.sh | bash
+```
+
+**Thủ công bằng git clone**
+
+```bash
+# cá nhân
+git clone https://github.com/quangtuyen88/stop-ai-slop-vn ~/.claude/skills/stop-ai-slop-vn
+# theo dự án
 git clone https://github.com/quangtuyen88/stop-ai-slop-vn <project>/.claude/skills/stop-ai-slop-vn
 ```
 
